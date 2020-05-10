@@ -1,5 +1,19 @@
 ## Welcome to GitHub Pages
 
+ダウンロードファイル：
+
+[R_2020.ipynb]{https://joji.github.io/R_2020.ipynb}
+
+[central2018-hitting.csv]{https://joji.github.io/central2018-hitting.csv}
+
+[pacific2018-hitting.csv]{https://joji.github.io/pacific2018-hitting.csv}
+
+[convenience201802.csv]{https://joji.github.io/convenience201802.csv}
+
+[topix.csv]{https://joji.github.io/topix.csv}
+
+[cia.db]{https://joji.github.io/cia.db}
+
 You can use the [editor on GitHub](https://github.com/joji/joji.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
