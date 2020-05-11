@@ -16,10 +16,7 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>重力加速度を除いた加速度 加速度 回転速度</h1>
-    </header>
-    <main>
+      <h2>重力加速度を除いた加速度</h2>
       <div>
         <div id="acceleration">
           <h2>acceleration[m/s^2]</h2>
@@ -27,12 +24,14 @@
           <p>y: <span id="acc-y"></span></p>
           <p>z: <span id="acc-z"></span></p>
         </div>
+	<h2>加速度</h2>
         <div id="accelerationIncludingGravity">
           <h2>accelerationIncludingGravity[m/s^2]</h2>
           <p>x: <span id="acc-gx"></span></p>
           <p>y: <span id="acc-gy"></span></p>
           <p>z: <span id="acc-gz"></span></p>
         </div>
+	<h2>回転速度</h2>
         <div id="rotationRate">
           <h2>rotationRate[degree/s]</h2>
           <p>a: <span id="rr-a"></span></p>
@@ -40,7 +39,6 @@
           <p>g: <span id="rr-g"></span></p>
         </div>
       </div>
-    </main>
     
     <script>
       (function() {
