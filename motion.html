@@ -1,0 +1,45 @@
+<html>
+  <body>
+
+    x: <span id="x" ></span> <br>
+    y: <span id="y" ></span> <br>
+    z: <span id="z" ></span> <br>
+    interval:  <span id="interval"  ></span> <br>
+    timeStamp: <span id="timestamp" ></span> <br>
+
+    <script type="text/javascript">
+    <!--
+	// ------------------------------------------------------------
+	// 各エレメントを取得する
+	// ------------------------------------------------------------
+	var element_x = document.getElementById("x");
+	var element_y = document.getElementById("y");
+	var element_z = document.getElementById("z");
+	var element_interval  = document.getElementById("interval");
+	var element_timestamp = document.getElementById("timestamp");
+
+	// ------------------------------------------------------------
+	// デバイスの現在のモーションを知らせるイベント(繰り返し発行される)
+	// ------------------------------------------------------------
+	window.addEventListener( "devicemotion" , function (e){
+
+		// ------------------------------------------------------------
+		// 各情報を取得する
+		// ------------------------------------------------------------
+		element_interval.textContent  = e.interval;
+		element_timestamp.textContent = e.timeStamp;
+
+		// ------------------------------------------------------------
+		// 現在の瞬間的な加速度3Dベクトルを取得する(重力加速度を含む)
+		// ------------------------------------------------------------
+		var vec3d = e.accelerationIncludingGravity;
+		element_x.textContent = String( vec3d.x );
+		element_y.textContent = String( vec3d.y );
+		element_z.textContent = String( vec3d.z );
+	});
+
+    //-->
+    </script>
+
+  </body>
+</html>
