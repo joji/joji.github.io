@@ -14,6 +14,8 @@
 
 [cia.db](https://joji.github.io/cia.db)
 
+[banks.xlsx](https://joji.github.io/banks.xlsx)
+
 以下は無視すること。
 
 You can use the [editor on GitHub](https://github.com/joji/joji.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
