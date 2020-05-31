@@ -12,6 +12,9 @@
 
 <body>
     <div id="main1" data-role="page" data-title="jQuery Mobile">
+        <div data-role="popup" id="pop1">
+            <p>ポップアップでのメッセージ</p>
+        </div>
  
         <div data-role="header">
             <h1>ヘッダー</h1>
@@ -20,9 +23,8 @@
         <div role="main" class="ui-content">
             <p>本文</p>
             <p><a href="#sub" data-role="button">サブページへ</a></p>
-            <p>
-                jQueryで<a href="#popup1" data-rel="popup">ポップアップ</a>させます。
-            </p>
+            <p><a href="#pop1" data-rel="popup" data-overlay-theme="b" data-arrow="t">ポップアップを表示</a></p>
+
         </div>
         <div data-role="footer">
             <h3>フッター</h3>
