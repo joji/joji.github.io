@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>jQuery Mobile</title>
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
-        </script>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
 
 <body>
     <div data-role="page" data-title="jQuery Mobile">
@@ -16,12 +16,23 @@
             <h1>ヘッダー</h1>
         </div>
         <div role="main" class="ui-content">
-            本文
+            <p>本文</p>
+            <p><a href="#sub" data-role="button">サブページへ</a></p>
         </div>
         <div data-role="footer">
             <h3>フッター</h3>
         </div>
-
+    </div>
+    <div id="sub" data-role="page">
+        <div data-role="header">
+            <h1>ヘッダー（サブページ）</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>サブページの本文</p>
+        </div>
+        <div data-role="footer">
+            <h3>フッター（サブページ）</h3>
+        </div>
     </div>
 
 </body>
