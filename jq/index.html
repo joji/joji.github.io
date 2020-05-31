@@ -12,16 +12,25 @@
 
 <body>
     <div id="main1" data-role="page" data-title="jQuery Mobile">
+        <div data-role="popup" id="popup1">
+            <p>ポップアップ！！！！！</p>
+        </div>
+ 
         <div data-role="header">
             <h1>ヘッダー</h1>
         </div>
+
         <div role="main" class="ui-content">
             <p>本文</p>
             <p><a href="#sub" data-role="button">サブページへ</a></p>
+            <p>
+                jQueryで<a href="#popup1" data-rel="popup">ポップアップ</a>させます。
+            </p>
         </div>
         <div data-role="footer">
             <h3>フッター</h3>
         </div>
+
     </div>
     <div id="sub" data-role="page">
         <div data-role="header">
@@ -29,7 +38,7 @@
         </div>
         <div role="main" class="ui-content">
             <p>サブページの本文</p>
-            <p><a href="#main1" data-role="button" class="ui-btn ui-btn-icon-left ui-icon-home">メインページへ</a></p>
+            <p><a href="#main1" data-role="button" data-icon="ui-icon-home">メインページへ</a></p>
         </div>
         <div data-role="footer">
             <h3>フッター（サブページ）</h3>
