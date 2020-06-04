@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div id="main1" data-role="page">
+        <div data-role="popup" id="pop1" data-arrow="true" data-dismissible="true">
+            <p>ポップアップでのメッセージ</p>
+            <p>ポップアップでのメッセージ</p>
+            <p>ポップアップでのメッセージ</p>
+        </div>
+
+        <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Go back" data-back-btn-theme="b">
+            <h1>ヘッダー</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>本文</p>
+            <p><a href="#sub" data-role="button">サブページへ</a></p>
+            <p><a href="#pop1" data-rel="popup">ポップアップを表示</a></p>
+
+        </div>
+        <div data-role="footer" class="ui-bar">
+            <h3>フッター</h3>
+            <p>
+                <a href="#sub" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-u">Up</a>
+                <a href="#sub" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-d">Down</a>
+                <a href="#sub" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">Left</a>
+                <a href="#sub" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-r">Right</a>
+            </p>
+        </div>
+
+    </div>
+    <div id="sub" data-role="page">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Go back" data-back-btn-theme="b">
+            <h1>ヘッダー（サブページ）</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>サブページの本文</p>
+            <p><a href="#main1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">メインページへ</a></p>
+            <p><a href="#main1" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">前のページに戻るよ</a></p>
+        </div>
+        <div data-role="footer" class="ui-bar" data-theme="b">
+            <h3>フッター（サブページ）</h3>
+            <p>フッターのテキスト</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
