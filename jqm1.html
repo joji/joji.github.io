@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>jQuery Mobile</title>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(document).on('pagecreate', function(e, d) {
+            if (e.target.id === 'sub') {
+            console.log('サブページが読み込まれました!');
+        }
+        });
+    </script>
 </head>
 
 <body>
@@ -18,16 +25,24 @@
             <p>ポップアップでのメッセージ</p>
         </div>
 
-        <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Go back" data-back-btn-theme="b">
+        <div data-role="header">
             <h1>ヘッダー</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active" data-icon="home">ホーム</a></li>
+                        <li><a href="#" data-icon="gear">設定</a></li>
+                        <li><a href="#" data-icon="info">ヘルプ</a></li>
+                        <li><a href="#" data-icon="user">問い合わせ</a></li>
+                    </ul>
+                </div>
         </div>
 
         <div role="main" class="ui-content">
             <p>本文</p>
             <p><a href="#sub" data-role="button">サブページへ</a></p>
             <p><a href="#pop1" data-rel="popup">ポップアップを表示</a></p>
-
         </div>
+
         <div data-role="footer" class="ui-bar">
             <h3>フッター</h3>
             <p>
@@ -37,8 +52,8 @@
                 <a href="#sub" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-r">Right</a>
             </p>
         </div>
-
     </div>
+
     <div id="sub" data-role="page">
         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Go back" data-back-btn-theme="b">
             <h1>ヘッダー（サブページ）</h1>
@@ -55,5 +70,5 @@
     </div>
 
 </body>
-
 </html>
+
