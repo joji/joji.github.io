@@ -24,6 +24,8 @@
 
 [movie.db](https://joji.github.io/movie.db)
 
+[MySQLWorkbench.plist](https://joji.github.io/MySQLWorkbench.plist)
+
 
 以下は無視すること。
 
