@@ -24,7 +24,7 @@
 
 [movie.db](https://joji.github.io/movie.db)
 
-[zabbix-release-4.4-1.el7.noarch.rpm](https://joji.github.io/blob/master/zabbix-release-4.4-1.el7.noarch.rpm)
+[zabbix-release-4.4-1.el7.noarch.rpm](https://github.com/joji/joji.github.io/blob/master/zabbix-release-4.4-1.el7.noarch.rpm)
 
 
 以下は無視すること。
