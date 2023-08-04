@@ -24,7 +24,7 @@
 
 [movie.db](https://joji.github.io/movie.db)
 
-[MySQLWorkbench.plist](https://joji.github.io/MySQLWorkbench.plist)
+[zabbix-release-4.4-1.el7.noarch.rpm](https://joji.github.io/blob/master/zabbix-release-4.4-1.el7.noarch.rpm)
 
 
 以下は無視すること。
